@@ -1,6 +1,21 @@
+let fiat = {
+    make:"Fiat",
+    model:500,
+    year:1994,
+    drive:function(){     //方法定义中，没有方法名，而是直接在关键字function后面提供了方法体。属性名就是方法名。
+        alert("hello");
+    }
+}
+
 //call the method
-continueDemoCode();
+fiat.drive();
+mathRandomDemoCode();
 console.log("退出方法");
+
+function mathRandomDemoCode(){
+    let randomLoc = Math.floor(Math.random()*50,10);
+    console.log(randomLoc);
+}
 
 function setTimeOutDemoCode(){
     for(let i = 0; i < 5; i++){
